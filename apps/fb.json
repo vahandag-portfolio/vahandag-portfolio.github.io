@@ -1,0 +1,8 @@
+{
+    "showAds":false,
+    "apis":[
+        {
+            "url":"https://snappsave.vercel.app/api"
+        }
+    ]
+}

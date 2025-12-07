@@ -1,0 +1,14 @@
+{
+    "showAds":false,
+    "apis":[
+        {
+            "url":"https://api.topjow.org/api/download"
+        },
+        {
+            "url":"https://api.topjow.org/api/download"
+        }
+    ],
+    "blockedDomains":[
+    ]
+
+}
