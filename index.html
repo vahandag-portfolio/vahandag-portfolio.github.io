@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -68,7 +68,8 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
           url('assets/img/bg.webp') center/cover no-repeat;
         z-index: -1;
       }
@@ -629,10 +630,124 @@
               <i class="fa-brands fa-apple"></i>
             </a>
             <a
-              href="#"
+              href="https://play.google.com/store/apps/details?id=com.vahandag.parsel_sorgu"
               target="_blank"
-              style="pointer-events: none; opacity: 0.5"
               title="Coming Soon"
+            >
+              <i class="fa-brands fa-google-play"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blackbird -->
+        <div class="project-card" data-project-id="blackbird">
+          <div class="project-header">
+            <img
+              src="assets/logos/blackbird.png"
+              alt="Proje Logo"
+              class="project-logo"
+            />
+            <h3 class="project-title">Blackbird</h3>
+          </div>
+          <p class="project-description">
+            A defense-intelligence app delivering real-time bilingual (EN/TR)
+            defense news, detailed weapon and equipment profiles, company
+            dossiers, and global defense-budget analytics. Features an
+            interactive 3D situation globe, PDF datasheet export, and bundled
+            mini-games built with the Flame engine.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Riverpod</span>
+            <span class="tech-tag">Flame</span>
+            <span class="tech-tag">RevenueCat</span>
+            <span class="tech-tag">3D Globe</span>
+            <span class="tech-tag">fl_chart</span>
+            <span class="tech-tag">AdMob</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://apps.apple.com/us/app/blackbird-all-about-defense/id6759628407"
+              target="_blank"
+            >
+              <i class="fa-brands fa-apple"></i>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.vahandag.blackbird"
+              target="_blank"
+            >
+              <i class="fa-brands fa-google-play"></i>
+            </a>
+            <i class="fas fa-external-link-alt" title="Visit Website"></i>
+          </div>
+        </div>
+
+        <!-- Savunma Sanayi -->
+        <div class="project-card" data-project-id="savunma-sanayi">
+          <div class="project-header">
+            <img
+              src="assets/logos/savunma-sanayi.png"
+              alt="Proje Logo"
+              class="project-logo"
+            />
+            <h3 class="project-title">Savunma Sanayi: Türkiye</h3>
+          </div>
+          <p class="project-description">
+            A news app focused on the Turkish defense industry, delivering
+            breaking news, weapon-system profiles, manufacturer details, and
+            global defense-budget rankings. Features Firestore content with a
+            custom caching layer, push notifications, interactive 3D model
+            viewing, and fl_chart budget visualizations.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Firestore</span>
+            <span class="tech-tag">FCM</span>
+            <span class="tech-tag">3D Models</span>
+            <span class="tech-tag">fl_chart</span>
+            <span class="tech-tag">AdMob</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://apps.apple.com/us/app/savunma-sanayi-t%C3%BCrkiye/id6761304111"
+              target="_blank"
+            >
+              <i class="fa-brands fa-apple"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Maliyet Hesap -->
+        <div class="project-card" data-project-id="maliyet-hesap">
+          <div class="project-header">
+            <img
+              src="assets/logos/maliyet-hesap.png"
+              alt="Proje Logo"
+              class="project-logo"
+            />
+            <h3 class="project-title">Maliyet Hesap</h3>
+          </div>
+          <p class="project-description">
+            A Flutter app that estimates business startup costs across 14
+            sectors using current Turkish market prices. Features dynamic
+            Firestore-driven forms with a custom formula engine, a
+            Gemini-powered AI cost assistant, and a TikTok-style video reels
+            feed.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Firestore</span>
+            <span class="tech-tag">Cubit</span>
+            <span class="tech-tag">Gemini AI</span>
+            <span class="tech-tag">AdMob</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.vahandag.maliyet_hesap"
+              target="_blank"
             >
               <i class="fa-brands fa-google-play"></i>
             </a>
@@ -1012,6 +1127,18 @@
           title: 'Parsel Sorgu',
           link: null,
         },
+        blackbird: {
+          title: 'Blackbird',
+          link: 'https://blackbird-defence.github.io',
+        },
+        'savunma-sanayi': {
+          title: 'Savunma Sanayi: Türkiye',
+          link: 'https://apps.apple.com/us/app/savunma-sanayi-t%C3%BCrkiye/id6761304111',
+        },
+        'maliyet-hesap': {
+          title: 'Maliyet Hesap',
+          link: 'https://play.google.com/store/apps/details?id=com.vahandag.maliyet_hesap',
+        },
         desponia: {
           title: 'Desponia',
           link: 'https://desponia.com',
@@ -1164,6 +1291,8 @@
       document
         .querySelectorAll('.project-links i:not(.fa-github)')
         .forEach((icon) => {
+          // Icons wrapped in an <a> (store links) are handled by the anchor itself
+          if (icon.closest('a')) return;
           icon.onclick = (e) => {
             e.stopPropagation(); // Kart tıklamasını engelle
             const projectId = icon
